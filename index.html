@@ -1,0 +1,176 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="auto">
+
+<head>
+    <meta charset="utf-8">
+    <title>The HW002</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!--    link bootstrap icon to use font icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+
+    <!--add css styles -->
+    <link rel="stylesheet" href="css/styleQ1.css">
+    <link rel="stylesheet" href="css/styleQ3.css">
+    <link rel="stylesheet" href="css/styleQ4.css">
+
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<!------------------------------------- section instgram ------------------------------------>
+<!--container for put it in the center of display-->
+<div class="container">
+    <!--  header of site-->
+    <header>
+        <!--    make two div(logo and setting) and then separate divs with set display to flex-->
+        <div class="logo">
+            <img src="/img/nasalogo.png" alt="nasa logo">
+            <p> nasa</p>
+        </div>
+        <div class="setting">
+            <img src="/img/more.png" alt="3 dots" style="width: 15px">
+        </div>
+    </header>
+    <!--  start of main content it contains video and content div-->
+    <main>
+        <div class="video">
+            <video src="img/video.mp4" autoplay muted loop></video>
+            <!--      use two svg for muted and user icon on bottom of image-->
+            <svg id="muted" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                 class="bi bi-volume-mute-fill" viewBox="0 0 16 16">
+                <path
+                        d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"/>
+            </svg>
+            <svg id="user" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                 class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            </svg>
+        </div>
+        <!--    start of "content div" that include like, comment and tag icons and caption of video -->
+        <div class="content">
+            <!--      icon div has 2 internal div and display fex-->
+            <div class="icon">
+                <div class="like">
+<!--                    use icon from bootstrap icon and import it in header-->
+                    <i class="bi bi-heart"></i>
+                    <i class="bi bi-chat"></i>
+                    <i class="bi bi-send"></i>
+                </div>
+                <div class="tag">
+                    <i class="bi bi-bookmark"></i>
+                </div>
+            </div>
+            <p class="view">1,601,981 views</p>
+            <p class="caption">
+                <strong>nasa</strong> "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequuntur
+                ea
+                fugiat
+                nesciunt nostrum possimus provident, sequi soluta veniam? Debitis ipsum nostrum nulla recusandae
+                similique sit
+                ut voluptatum?... <span class="gray">more</span>
+            </p>
+            <div class="gray">
+                <p>View all 2,128 comments</p>
+                <p>22 HOURS AGO</p>
+            </div>
+        </div>
+    </main>
+</div>
+
+
+<!------------------------------------- section iran and korea ------------------------------>
+<!--make a table to show the status -->
+<div class=" status container black mb-1">
+    <table>
+        <thead>
+        <tr>
+<!--            use inline css to change the size of flags-->
+            <th colspan="2"><img src="img/koreaFlag.png" alt="korea flag" width="20" height="20"></th>
+            <th colspan="4">TEAM STATS</th>
+            <th colspan="2"><img src="img/iranFlag.png" alt="iran flag" width="20" height="20"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td colspan="2">13</td>
+            <td colspan="4">Shots</td>
+            <td colspan="2">16</td>
+        </tr>
+        <tr>
+            <td colspan="2">6</td>
+            <td colspan="4">Shots on target</td>
+            <td colspan="2">6</td>
+        </tr>
+        <tr>
+            <td colspan="2">49%</td>
+            <td colspan="4">Possession</td>
+            <td colspan="2">51%</td>
+        </tr>
+        <tr>
+            <td colspan="2">429</td>
+            <td colspan="4">Passes</td>
+            <td colspan="2">444</td>
+        </tr>
+        <tr>
+            <td colspan="2">82%</td>
+            <td colspan="4">Pass accuracy</td>
+            <td colspan="2">84%</td>
+        </tr>
+        <tr>
+            <td colspan="2">10</td>
+            <td colspan="4">Fouls</td>
+            <td colspan="2">3</td>
+        </tr>
+        <tr>
+            <td colspan="2">1</td>
+            <td colspan="4">Yellow Cards</td>
+            <td colspan="2">0</td>
+        </tr>
+        <tr>
+            <td colspan="2">0</td>
+            <td colspan="4">Red cards</td>
+            <td colspan="2">0</td>
+        </tr>
+        <tr>
+            <td colspan="2">1</td>
+            <td colspan="4">Offsides</td>
+            <td colspan="2">1</td>
+        </tr>
+        <tr>
+            <td colspan="2">9</td>
+            <td colspan="4">Corners</td>
+            <td colspan="2">8</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<!-------------------------------------- section sidebar ------------------------------------>
+<!--make an unordered list and then change the list style to none-->
+<div class=" sidebar container mb-1">
+    <ul>
+        <li><P>Digital Content & Devices</P></li>
+        <li class="hover"><P>Prime Video</P><i class="bi bi-chevron-right"></i></li>
+        <li class="hover"><P>Amazon Music</P><i class="bi bi-chevron-right"></i></li>
+        <li class="hover"><P>Echo and Alexa</P><i class="bi bi-chevron-right"></i></li>
+        <li class="hover"><P>Fire Tablets</P><i class="bi bi-chevron-right"></i></li>
+        <li class="hover"><P>Fire TV</P><i class="bi bi-chevron-right"></i></li>
+        <li class="hover"><P>Kindle E-readers & Books</P><i class="bi bi-chevron-right"></i></li>
+    </ul>
+</div>
+<!--temporary comment main.js file!!!!!!!!!!-->
+<!--<script src="js/main.js"></script>-->
+</body>
+
+</html>
