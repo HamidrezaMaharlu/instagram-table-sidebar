@@ -1,0 +1,20 @@
+.black {
+  background-color: #212326;
+  color: #d2cece;
+}
+.status table {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.status td,th {
+  padding: 10px 0;
+  font-size: 12px;
+}
+.status th {
+  font-weight: normal;
+}
+
+.mb-1{
+  margin-top:10px;
+}
